@@ -4,7 +4,6 @@ import * as d3 from 'd3';
 import { event as d3Event } from 'd3-selection';
 import * as R from 'ramda';
 import { AppService } from './app-service.service';
-import { Observable } from 'rxjs/internal/Observable';
 
 function getScoreColour(score: number | null, defaultColor = 'LightGray') {
     if (R.isNil(score) || Number.isNaN(score) || score > 10) {
